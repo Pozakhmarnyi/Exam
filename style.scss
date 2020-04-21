@@ -1,0 +1,389 @@
+@import "bootstrap-4.4.1/scss/bootstrap-grid.scss";
+@font-face {
+  font-family: Gotham;
+  src: url(/fonts/gothambold/gothambold1.woff) format("woff"),
+    url(/fonts/GothamBook/GothamBook.woff) format("woff");
+}
+* {
+  box-sizing: content-box;
+}
+body {
+  background-color: #f6f6f3;
+  //   background: #000;
+  margin: auto 0;
+}
+.menu-item {
+  color: rgb(148, 148, 148);
+  font-size: 14px;
+  font-family: "Gotham";
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+.regulator {
+  width: 1600px;
+  height: 90px;
+  background: rgba(116, 116, 116, 0.267);
+  align-items: center;
+  position: absolute;
+  position: fixed;
+  z-index: 250;
+  top: 0;
+}
+.menu {
+  // background: rgba(97, 97, 97, 0.158);
+  margin: auto;
+  width: 1170px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu__menu div {
+  width: 110px;
+  height: 40px;
+  padding: 30px;
+  font-size: 14px;
+  font-family: "Gotham";
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 3;
+}
+
+.menu__menu {
+  display: flex;
+  align-items: center;
+}
+
+// font-family: 'Open Sans', sans-serif;
+
+header {
+  margin: auto;
+  width: 1600px;
+  height: 800px;
+  position: relative;
+}
+
+.box img {
+  width: 1600px;
+  height: 800px;
+}
+
+.slider .slick-dots {
+  width: 20px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 30%;
+  right: 5%;
+  li {
+    margin: 20px 0;
+  }
+}
+
+// mainTop --------------------------
+
+.mainTop {
+  margin: auto;
+  width: 1600px;
+  height: 953px;
+  background: white;
+}
+
+.title {
+  font-size: 44px;
+  font-family: "Gotham";
+  color: rgb(44, 64, 88);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 0.5;
+}
+.c {
+  text-align: center;
+}
+.p {
+  padding-top: 122px;
+}
+.pT130pD {
+  padding-top: 130px;
+  padding-bottom: 20px;
+}
+.b {
+  padding-bottom: 100px;
+}
+
+.img_color {
+  margin-left: 0px;
+  width: 585px;
+  height: 470px;
+  background: #55b7ff;
+}
+.mainTop__content__img {
+  margin-left: 15px;
+  position: relative;
+  width: 885px;
+  height: 540px;
+}
+
+.mainTop__content__img__picture {
+  position: absolute;
+  top: 70px;
+  left: 215px;
+  z-index: 40;
+}
+
+.correctPlace {
+  left: 45px;
+}
+
+.mainTop__content__text {
+  margin-left: 50px;
+  width: 470px;
+  height: 540px;
+  // background: grey;
+}
+
+.sub_title {
+  font-size: 22px;
+  font-family: "Gotham";
+  // font-weight: "Book";
+  color: rgb(44, 64, 88);
+  text-transform: uppercase;
+  line-height: 1.091;
+}
+
+.text {
+  font-size: 18px;
+
+  font-family: "Open Sans", sans-serif;
+  color: rgb(75, 85, 98);
+  line-height: 1.667;
+  text-align: left;
+  width: 460px;
+  height: 78px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.button {
+  background: white;
+  border-width: 1px;
+  border-color: rgb(44, 64, 88);
+  border-style: solid;
+  width: 188px;
+  height: 48px;
+  margin-bottom: 60px;
+}
+
+.more_details {
+  font-size: 14px;
+  font-family: "Gotham";
+  color: rgb(44, 64, 88);
+  text-transform: uppercase;
+  line-height: 1.571;
+  text-align: center;
+}
+
+.mainBottom {
+  margin: auto;
+  width: 1600px;
+  height: 680px;
+  background: white;
+  &__forText {
+    margin-left: 240px;
+  }
+}
+
+.changeColor {
+  margin-left: 305px;
+  background: #7e5aff;
+}
+
+// БЕЗ БЕМУ просто смерть !!!  <====------
+
+.news {
+  margin: auto;
+  width: 1600px;
+  height: 1035px;
+  background-image: url(/img/Bg.png);
+  &__header {
+    text-align: center;
+    &__line {
+      padding-bottom: 40px;
+    }
+    &__white {
+      color: white;
+      font-weight: normal;
+    }
+  }
+}
+.SliderBox {
+  margin: auto;
+  width: 1170px;
+  height: 516px;
+  position: relative;
+}
+#prev {
+  position: absolute;
+  left: -70px;
+  top: 250px;
+}
+#next {
+  position: absolute;
+  right: -70px;
+  top: 250px;
+}
+
+.boxForSlide {
+  width: 370px;
+  height: 516px;
+  &__bgBOX {
+    width: 370px;
+    height: 516px;
+    background: white;
+  }
+  &__img {
+    width: 370px;
+    height: 240px;
+  }
+  &__text {
+    padding-left: 25px;
+    width: 370px;
+    height: 272px;
+
+    &__title {
+      padding-top: 15px;
+      font-size: 22px;
+      font-family: "Gotham";
+      color: rgb(44, 64, 88);
+      font-weight: bold;
+      text-transform: uppercase;
+      line-height: 1.545;
+      text-align: left;
+      width: 276px;
+      height: 50px;
+    }
+    &__subTitle {
+      padding-top: 20px;
+      font-size: 18px;
+      font-family: "Open Sans", sans-serif;
+      color: rgb(75, 85, 98);
+      line-height: 1.667;
+      text-align: left;
+
+      width: 320px;
+      height: 49px;
+    }
+    &__but {
+      padding-top: 40px;
+    }
+  }
+}
+
+// gallery --------------===============================
+
+.gallery {
+  margin: auto;
+  width: 1600px;
+  height: 1000px;
+  background: white;
+  &__header {
+    text-align: center;
+    &__line {
+      padding-bottom: 40px;
+    }
+    &__white {
+      color: rgb(0, 0, 0);
+      font-weight: normal;
+    }
+  }
+  &__img {
+    // box-sizing: border-box;
+    margin: auto;
+    width: 1170px;
+    height: 439px;
+  }
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 10px 10px;
+  grid-template-areas: "Img_1 Img_1 Img_2 Img_3" "Img_1 Img_1 Img_4 img_5" ". . . .";
+}
+.qIMG {
+  width: 581px;
+  height: 443px;
+}
+.Img_1 {
+  grid-area: Img_1;
+}
+
+.Img_2 {
+  grid-area: Img_2;
+}
+
+.Img_3 {
+  grid-area: Img_3;
+}
+
+.Img_4 {
+  grid-area: Img_4;
+}
+
+.img_5 {
+  grid-area: img_5;
+}
+
+// map ====================================
+
+#contact {
+  margin: auto;
+  width: 1600px;
+  height: 700px;
+}
+
+#map {
+  width: 100%;
+  height: 700px;
+}
+
+// FOOOOTER ============
+
+#FOOTER {
+  margin: auto;
+  width: 1600px;
+  height: 524px;
+  background-image: url(/img/Bgfooter.png);
+}
+.footerBox {
+  padding-top: 205px;
+  margin: auto;
+  width: 770px;
+  height: 117px;
+
+  &__up {
+    display: flex;
+    justify-content: space-between;
+    &__social {
+      width: 200px;
+    }
+  }
+  &__text {
+    padding-top: 50px;
+    color: white;
+    font-size: 14px;
+    font-family: "Gotham";
+
+    line-height: 1.571;
+  }
+}
+
+.red {
+  color: red;
+}
+.green {
+  color: greenyellow;
+}
